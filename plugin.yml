@@ -1,0 +1,31 @@
+name: Nio-Community-Goals
+version: 0.1
+main: NioCommunityGoals
+description: Adds the ability to customize drops.
+api-version: 1.13
+commands:
+  goalinfo:
+      description: Allows the user to get info on a goal.
+      usage: /goalinfo <goal name>
+      permission: niocommunitygoal.goalinfo
+      permission-message: You don't have permission to get info on a goal.
+  goalcontribute:
+      description: Allows the user to advance the progress of a community goal.
+      usage: /goalcontribute <goal name> <amount>
+      permission: niocommunitygoal.contribute
+      permission-message: You don't have permission to contribute to a goal.
+  goalrewardclaim:
+      description: Allows the user to claim their goal rewards.
+      usage: /goalrewardclaim <goal name>
+      permission: niocommunitygoal.claim
+      permission-message: You don't have permission to claim goal rewards.
+  reloadcommunitygoals:
+      description: Reloads the community goals.
+      usage: /reloadcommunitygoals
+      permission: niocommunitygoal.reload
+      permission-message: You don't have permission to reload the community goals.
+  goalresetprogress:
+      description: Resets a goal's progress.
+      usage: /goalresetprogress <goal name>
+      permission: niocommunitygoal.reset
+      permission-message: You don't have permission to reset a goal's progress.
